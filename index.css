@@ -1,6 +1,162 @@
-.he{
-    background-color: beige;
+.container {
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+    /* t r b l */
+    margin: 25px 25px 0px 100px;
+    padding: 100px;
 }
-.ni{
-    color: blue;
+/*signup page*/
+.signup {
+    border: 2px solid red;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 25px;
+    background-color: beige;
+    gap: 25px;
+    box-shadow: 50px 50px 50px red;
+    border-radius: 100px;
+}
+
+.bu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: yellowgreen;
+}
+
+.bu button {
+    border: none;
+    color: black;
+}
+
+.data {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*home page*/
+/*header*/
+.header-container {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.head-items {
+    display: flex;
+    color: red;
+    gap: 25px;
+
+}
+
+.logo-image {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.logo {
+    align-items: left;
+}
+
+.head-items li {
+    list-style: none;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+/*main*/
+.main-container {
+    height: 80vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://cdn.wallpapersafari.com/91/2/i2yDgN.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    background-attachment: fixed;
+
+}
+
+
+/*login page*/
+.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://wallpapers.com/images/hd/stranger-things-aesthetic-desktop-0rs311pcifdnjnmk.jpg");
+}
+
+.login{
+    border: 2px solid black;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    gap: 25px;
+    box-shadow: inset -50px -50px 50px  red;    
+    border-radius: 100px;
+}
+
+.form-data{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#email{
+    background-color: azure;
+}
+#password{
+    background-color: azure;
+}
+.button-container button{
+    background-color:  red;
+    color: black;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
