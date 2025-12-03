@@ -6,6 +6,7 @@
     margin: 25px 25px 0px 100px;
     padding: 100px;
 }
+
 /*signup page*/
 .signup {
     border: 2px solid red;
@@ -13,25 +14,30 @@
     width: 500px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     padding: 25px;
-    background-color: beige;
     gap: 25px;
-    box-shadow: 50px 50px 50px red;
+    box-shadow: 50px 50px 50px red, -50px -50px 50px rgb(76, 76, 255);
     border-radius: 100px;
 }
 
-.bu {
-    display: flex;
-    width: 100%;
+.bu button {
+    background-color: blue;
+    color: black;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    align-items: center;
     justify-content: center;
-    color: yellowgreen;
 }
 
-.bu button {
-    border: none;
-    color: black;
+button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
 
 .data {
@@ -48,6 +54,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background-image: url("https://t3.ftcdn.net/jpg/07/86/70/32/360_F_786703271_I0Q4oFQ5nWE3LTpGimhgEC7jXFZ1WA9G.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    background-attachment: fixed;
 }
 
 /*home page*/
@@ -65,6 +78,20 @@
     color: red;
     gap: 25px;
 
+}
+
+.head-items a {
+    text-decoration: none;
+    color: red;
+    letter-spacing: 0.3rem;
+    transition: 5s;
+    font-weight: bold;
+
+}
+
+.head-items a:hover {
+    letter-spacing: 0;
+    color: white;
 }
 
 .logo-image {
@@ -89,7 +116,7 @@
 }
 
 /*main*/
-.main-container {
+/*.main-container {
     height: 80vh;
     color: white;
     display: flex;
@@ -103,7 +130,38 @@
     background-attachment: fixed;
 
 }
+*/
+.box {
+    height: 500px;
+    width: 500px;
+    background-image: url("https://mrwallpaper.com/images/hd/steve-harrington-with-bat-stranger-things-pipo6n1cgxaadzcj.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
 
+.box:hover {
+    transform: scale(1.1);
+    transition: ease-in-out;
+    cursor: pointer;
+    height: 500px;
+    width: 500px;
+    background-image: url("https://preview.redd.it/nquq0l6zox001.jpg?auto=webp&s=9593e3c60df76c991e0e978f208638362a520dd9");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.box1 {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    gap: 10px;
+}
+
+.box1 div {
+    background-color: red;
+}
 
 /*login page*/
 .login-container {
@@ -114,7 +172,7 @@
     background-image: url("https://wallpapers.com/images/hd/stranger-things-aesthetic-desktop-0rs311pcifdnjnmk.jpg");
 }
 
-.login{
+.login {
     border: 2px solid black;
     height: 400px;
     width: 400px;
@@ -124,11 +182,11 @@
     justify-content: center;
     padding: 25px;
     gap: 25px;
-    box-shadow: inset -50px -50px 50px  red;    
+    box-shadow: inset -50px -50px 50px red;
     border-radius: 100px;
 }
 
-.form-data{
+.form-data {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -137,14 +195,16 @@
     align-items: center;
 }
 
-#email{
+#email {
     background-color: azure;
 }
-#password{
+
+#password {
     background-color: azure;
 }
-.button-container button{
-    background-color:  red;
+
+.button-container button {
+    background-color: red;
     color: black;
     font-weight: bold;
     width: 100px;
@@ -159,4 +219,42 @@ button:hover {
     background-color: black;
     color: white;
     cursor: pointer;
+}
+
+/*video background*/
+body {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.vi-bg {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+
+}
+
+/*footer*/
+.footer-container {
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
